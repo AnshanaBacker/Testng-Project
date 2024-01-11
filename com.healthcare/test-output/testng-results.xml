@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-11T09:19:50 IST" name="Suite" finished-at="2024-01-11T09:20:39 IST" duration-ms="49128">
+    <groups>
+      <group name="group3">
+        <method signature="LoginPageTestClass.verifyUnSuccessfulLogin(java.lang.String,java.lang.String)[pri:3, instance:executePageClasses.LoginPageTestClass@1972e513]" name="verifyUnSuccessfulLogin" class="executePageClasses.LoginPageTestClass"/>
+        <method signature="HomePageTestClass.verifySuccessfulLogoutFromHomePage(java.lang.String,java.lang.String)[pri:0, instance:executePageClasses.HomePageTestClass@97e93f1]" name="verifySuccessfulLogoutFromHomePage" class="executePageClasses.HomePageTestClass"/>
+      </group> <!-- group3 -->
+      <group name="group2">
+        <method signature="LoginPageTestClass.verifySuccessfulLogin(java.lang.String,java.lang.String)[pri:2, instance:executePageClasses.LoginPageTestClass@1972e513]" name="verifySuccessfulLogin" class="executePageClasses.LoginPageTestClass"/>
+        <method signature="HomePageTestClass.verifyAllTilesAreDisplayedInHomePage(java.lang.String,java.lang.String)[pri:0, instance:executePageClasses.HomePageTestClass@97e93f1]" name="verifyAllTilesAreDisplayedInHomePage" class="executePageClasses.HomePageTestClass"/>
+      </group> <!-- group2 -->
+      <group name="group1">
+        <method signature="LoginPageTestClass.verifyThePageOpenWhileHittingUrl()[pri:1, instance:executePageClasses.LoginPageTestClass@1972e513]" name="verifyThePageOpenWhileHittingUrl" class="executePageClasses.LoginPageTestClass"/>
+      </group> <!-- group1 -->
+    </groups>
+    <test started-at="2024-01-11T09:19:50 IST" name="Test2" finished-at="2024-01-11T09:20:13 IST" duration-ms="22658">
+      <class name="executePageClasses.HomePageTestClass">
+        <test-method is-config="true" signature="createExtendReport(org.testng.ITestContext)[pri:0, instance:executePageClasses.HomePageTestClass@97e93f1]" started-at="2024-01-11T09:19:50 IST" name="createExtendReport" finished-at="2024-01-11T09:19:50 IST" duration-ms="264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13f17eb4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtendReport -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.HomePageTestClass@97e93f1]" started-at="2024-01-11T09:19:51 IST" name="beforeMethod" finished-at="2024-01-11T09:19:58 IST" duration-ms="7178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyAllTilesAreDisplayedInHomePage(java.lang.String,java.lang.String)[pri:0, instance:executePageClasses.HomePageTestClass@97e93f1]" started-at="2024-01-11T09:19:58 IST" name="verifyAllTilesAreDisplayedInHomePage" data-provider="SuccessfulLogin" finished-at="2024-01-11T09:20:01 IST" duration-ms="3269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllTilesAreDisplayedInHomePage -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.HomePageTestClass@97e93f1]" started-at="2024-01-11T09:20:01 IST" name="afterMethod" finished-at="2024-01-11T09:20:01 IST" duration-ms="231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAllTilesAreDisplayedInHomePage status=SUCCESS method=HomePageTestClass.verifyAllTilesAreDisplayedInHomePage(java.lang.String,java.lang.String)[pri:0, instance:executePageClasses.HomePageTestClass@97e93f1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.HomePageTestClass@97e93f1]" started-at="2024-01-11T09:20:01 IST" name="beforeMethod" finished-at="2024-01-11T09:20:07 IST" duration-ms="5717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifySuccessfulLogoutFromHomePage(java.lang.String,java.lang.String)[pri:0, instance:executePageClasses.HomePageTestClass@97e93f1]" started-at="2024-01-11T09:20:07 IST" name="verifySuccessfulLogoutFromHomePage" data-provider="SuccessfulLogin" finished-at="2024-01-11T09:20:12 IST" duration-ms="5387" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulLogoutFromHomePage -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.HomePageTestClass@97e93f1]" started-at="2024-01-11T09:20:12 IST" name="afterMethod" finished-at="2024-01-11T09:20:13 IST" duration-ms="192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySuccessfulLogoutFromHomePage status=SUCCESS method=HomePageTestClass.verifySuccessfulLogoutFromHomePage(java.lang.String,java.lang.String)[pri:0, instance:executePageClasses.HomePageTestClass@97e93f1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- executePageClasses.HomePageTestClass -->
+    </test> <!-- Test2 -->
+    <test started-at="2024-01-11T09:19:50 IST" name="Test1" finished-at="2024-01-11T09:20:39 IST" duration-ms="49128">
+      <class name="executePageClasses.LoginPageTestClass">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.LoginPageTestClass@1972e513]" started-at="2024-01-11T09:19:50 IST" name="beforeMethod" finished-at="2024-01-11T09:19:58 IST" duration-ms="7639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyThePageOpenWhileHittingUrl()[pri:1, instance:executePageClasses.LoginPageTestClass@1972e513]" started-at="2024-01-11T09:19:58 IST" name="verifyThePageOpenWhileHittingUrl" finished-at="2024-01-11T09:19:58 IST" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThePageOpenWhileHittingUrl -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.LoginPageTestClass@1972e513]" started-at="2024-01-11T09:19:58 IST" name="afterMethod" finished-at="2024-01-11T09:19:58 IST" duration-ms="131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyThePageOpenWhileHittingUrl status=SUCCESS method=LoginPageTestClass.verifyThePageOpenWhileHittingUrl()[pri:1, instance:executePageClasses.LoginPageTestClass@1972e513] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.LoginPageTestClass@1972e513]" started-at="2024-01-11T09:19:58 IST" name="beforeMethod" finished-at="2024-01-11T09:20:05 IST" duration-ms="7370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifySuccessfulLogin(java.lang.String,java.lang.String)[pri:2, instance:executePageClasses.LoginPageTestClass@1972e513]" started-at="2024-01-11T09:20:05 IST" name="verifySuccessfulLogin" data-provider="SuccessfulLogin" finished-at="2024-01-11T09:20:08 IST" duration-ms="2843" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.LoginPageTestClass@1972e513]" started-at="2024-01-11T09:20:08 IST" name="afterMethod" finished-at="2024-01-11T09:20:08 IST" duration-ms="171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifySuccessfulLogin(java.lang.String,java.lang.String)[pri:2, instance:executePageClasses.LoginPageTestClass@1972e513] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.LoginPageTestClass@1972e513]" started-at="2024-01-11T09:20:08 IST" name="beforeMethod" finished-at="2024-01-11T09:20:14 IST" duration-ms="5583" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUnSuccessfulLogin(java.lang.String,java.lang.String)[pri:3, instance:executePageClasses.LoginPageTestClass@1972e513]" started-at="2024-01-11T09:20:14 IST" name="verifyUnSuccessfulLogin" data-provider="unSuccessfulLogin" finished-at="2024-01-11T09:20:17 IST" duration-ms="2683" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[adm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.LoginPageTestClass@1972e513]" started-at="2024-01-11T09:20:17 IST" name="afterMethod" finished-at="2024-01-11T09:20:17 IST" duration-ms="193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUnSuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifyUnSuccessfulLogin(java.lang.String,java.lang.String)[pri:3, instance:executePageClasses.LoginPageTestClass@1972e513] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.LoginPageTestClass@1972e513]" started-at="2024-01-11T09:20:17 IST" name="beforeMethod" finished-at="2024-01-11T09:20:26 IST" duration-ms="9482" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUnSuccessfulLogin(java.lang.String,java.lang.String)[pri:3, instance:executePageClasses.LoginPageTestClass@1972e513]" started-at="2024-01-11T09:20:26 IST" name="verifyUnSuccessfulLogin" data-provider="unSuccessfulLogin" finished-at="2024-01-11T09:20:30 IST" duration-ms="3237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.LoginPageTestClass@1972e513]" started-at="2024-01-11T09:20:30 IST" name="afterMethod" finished-at="2024-01-11T09:20:30 IST" duration-ms="171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUnSuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifyUnSuccessfulLogin(java.lang.String,java.lang.String)[pri:3, instance:executePageClasses.LoginPageTestClass@1972e513] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executePageClasses.LoginPageTestClass@1972e513]" started-at="2024-01-11T09:20:30 IST" name="beforeMethod" finished-at="2024-01-11T09:20:37 IST" duration-ms="6883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUnSuccessfulLogin(java.lang.String,java.lang.String)[pri:3, instance:executePageClasses.LoginPageTestClass@1972e513]" started-at="2024-01-11T09:20:37 IST" name="verifyUnSuccessfulLogin" data-provider="unSuccessfulLogin" finished-at="2024-01-11T09:20:39 IST" duration-ms="2144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[adm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnSuccessfulLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executePageClasses.LoginPageTestClass@1972e513]" started-at="2024-01-11T09:20:39 IST" name="afterMethod" finished-at="2024-01-11T09:20:39 IST" duration-ms="191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUnSuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifyUnSuccessfulLogin(java.lang.String,java.lang.String)[pri:3, instance:executePageClasses.LoginPageTestClass@1972e513] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- executePageClasses.LoginPageTestClass -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>
