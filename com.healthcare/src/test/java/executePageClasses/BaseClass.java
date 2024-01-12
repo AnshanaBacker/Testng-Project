@@ -74,7 +74,7 @@ public class BaseClass {
 	       driver.quit();
   }
   
-  @BeforeSuite(alwaysRun = true)  //this code should run always so write as 'alwaysRun = true'
+  @BeforeSuite(alwaysRun = true) 
 	public void createExtendReport(final ITestContext testContext)
 	{
 		extendReport.ExtentManager.createInstance().createTest(testContext.getName(),"message");
