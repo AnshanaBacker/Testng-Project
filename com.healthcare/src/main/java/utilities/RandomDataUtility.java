@@ -13,9 +13,7 @@ public class RandomDataUtility {
 	static String fName;
 	static String lName;
 	static String name;
-	static String title;
 	static String ph_no;
-	static String ph_no1;
 	static String buildingNo, streetAddress, cityName, state, country, postCode;
 	static String addressFull;
 
