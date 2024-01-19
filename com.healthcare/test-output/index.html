@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,65 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">24 methods,   24 passed</span>
+                    <span class="method-stats">30 methods, 2 failed,  6 skipped,  22 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="executePageClasses.ActiveVisitTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="executePageClasses.ActiveVisitTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="executePageClasses.ActiveVisitTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="executePageClasses.ActiveVisitTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="executePageClasses.ActiveVisitTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="executePageClasses.ActiveVisitTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="executePageClasses.ActiveVisitTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="executePageClasses.ActiveVisitTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -163,16 +221,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="executePageClasses.ActiveVisitTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="executePageClasses.ActiveVisitTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="executePageClasses.RegisterAPatientTestClass" class="method navigator-link" hash-for-method="verifyThePatientIsNotInActivevisitAfterEndVisit(admin, Admin123)">verifyThePatientIsNotInActivevisitAfterEndVisit(admin, Admin123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -193,12 +241,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="executePageClasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifyUnSuccessfulLogin(adm, 123456)">verifyUnSuccessfulLogin(adm, 123456)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="executePageClasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifyUnSuccessfulLogin(admin, 123456)">verifyUnSuccessfulLogin(admin, 123456)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="executePageClasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifyUnSuccessfulLogin(admin, 123456)">verifyUnSuccessfulLogin(admin, 123456)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="executePageClasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifyUnSuccessfulLogin(adm, 123456)">verifyUnSuccessfulLogin(adm, 123456)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -208,17 +256,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="executePageClasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifyUnSuccessfulLogin(adm, Admin123)">verifyUnSuccessfulLogin(adm, Admin123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="executePageClasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifyUnSuccessfulLogin(admin, 123456)">verifyUnSuccessfulLogin(admin, 123456)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="executePageClasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifyUnSuccessfulLogin(adm, 123456)">verifyUnSuccessfulLogin(adm, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="executePageClasses.LoginPageTestClass" class="method navigator-link" hash-for-method="verifyUnSuccessfulLogin(adm, Admin123)">verifyUnSuccessfulLogin(adm, Admin123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -233,6 +281,126 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">executePageClasses.ActiveVisitTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at executePageClasses.ActiveVisitTestClass.verifyThePatientIsInActivevisitPagewhileStartVisit(ActiveVisitTestClass.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at executePageClasses.ActiveVisitTestClass.verifyThePatientIsInActivevisitPagewhileStartVisit(ActiveVisitTestClass.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">executePageClasses.ActiveVisitTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at executePageClasses.ActiveVisitTestClass.verifyThePatientIsInActivevisitPagewhileStartVisit(ActiveVisitTestClass.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at executePageClasses.ActiveVisitTestClass.verifyThePatientIsInActivevisitPagewhileStartVisit(ActiveVisitTestClass.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at executePageClasses.ActiveVisitTestClass.verifyThePatientIsInActivevisitPagewhileStartVisit(ActiveVisitTestClass.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at executePageClasses.ActiveVisitTestClass.verifyThePatientIsInActivevisitPagewhileStartVisit(ActiveVisitTestClass.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at executePageClasses.ActiveVisitTestClass.verifyThePatientIsInActivevisitPagewhileStartVisit(ActiveVisitTestClass.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">
+                  </a> <!-- verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123) -->
+                  <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit</span>
+                  <span class="parameters">(admin,Admin123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at executePageClasses.ActiveVisitTestClass.verifyThePatientIsInActivevisitPagewhileStartVisit(ActiveVisitTestClass.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -276,30 +444,6 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">executePageClasses.ActiveVisitTestClass</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">
-                  </a> <!-- verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123) -->
-                  <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit</span>
-                  <span class="parameters">(admin,Admin123)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)">
-                  </a> <!-- verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123) -->
-                  <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit</span>
-                  <span class="parameters">(admin,Admin123)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">executePageClasses.LoginPageTestClass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -335,38 +479,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyUnSuccessfulLogin(adm, 123456)">
-                  </a> <!-- verifyUnSuccessfulLogin(adm, 123456) -->
-                  <span class="method-name">verifyUnSuccessfulLogin</span>
-                  <span class="parameters">(adm,123456)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUnSuccessfulLogin(admin, 123456)">
-                  </a> <!-- verifyUnSuccessfulLogin(admin, 123456) -->
-                  <span class="method-name">verifyUnSuccessfulLogin</span>
-                  <span class="parameters">(admin,123456)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUnSuccessfulLogin(adm, Admin123)">
-                  </a> <!-- verifyUnSuccessfulLogin(adm, Admin123) -->
-                  <span class="method-name">verifyUnSuccessfulLogin</span>
-                  <span class="parameters">(adm,Admin123)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUnSuccessfulLogin(adm, Admin123)">
-                  </a> <!-- verifyUnSuccessfulLogin(adm, Admin123) -->
-                  <span class="method-name">verifyUnSuccessfulLogin</span>
-                  <span class="parameters">(adm,Admin123)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyUnSuccessfulLogin(admin, 123456)">
                   </a> <!-- verifyUnSuccessfulLogin(admin, 123456) -->
                   <span class="method-name">verifyUnSuccessfulLogin</span>
@@ -379,6 +491,38 @@
                   </a> <!-- verifyUnSuccessfulLogin(adm, 123456) -->
                   <span class="method-name">verifyUnSuccessfulLogin</span>
                   <span class="parameters">(adm,123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulLogin(adm, Admin123)">
+                  </a> <!-- verifyUnSuccessfulLogin(adm, Admin123) -->
+                  <span class="method-name">verifyUnSuccessfulLogin</span>
+                  <span class="parameters">(adm,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulLogin(admin, 123456)">
+                  </a> <!-- verifyUnSuccessfulLogin(admin, 123456) -->
+                  <span class="method-name">verifyUnSuccessfulLogin</span>
+                  <span class="parameters">(admin,123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulLogin(adm, 123456)">
+                  </a> <!-- verifyUnSuccessfulLogin(adm, 123456) -->
+                  <span class="method-name">verifyUnSuccessfulLogin</span>
+                  <span class="parameters">(adm,123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnSuccessfulLogin(adm, Admin123)">
+                  </a> <!-- verifyUnSuccessfulLogin(adm, Admin123) -->
+                  <span class="method-name">verifyUnSuccessfulLogin</span>
+                  <span class="parameters">(adm,Admin123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -578,108 +722,132 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(24);
+data.addRows(30);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyCaptureVitalsOfPatientSuccessfullyRegistered')
 data.setCell(0, 2, 'executePageClasses.CaptureVitalsTestClass')
-data.setCell(0, 3, 33664);
+data.setCell(0, 3, 31688);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyCaptureVitalsOfPatientSuccessfullyRegistered')
-data.setCell(1, 2, 'executePageClasses.CaptureVitalsTestClass')
-data.setCell(1, 3, 24376);
+data.setCell(1, 1, 'verifyThePatientIsInActivevisitPagewhileStartVisit')
+data.setCell(1, 2, 'executePageClasses.ActiveVisitTestClass')
+data.setCell(1, 3, 27743);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyThePatientIsInActivevisitPagewhileStartVisit')
-data.setCell(2, 2, 'executePageClasses.ActiveVisitTestClass')
-data.setCell(2, 3, 20938);
+data.setCell(2, 1, 'verifyCaptureVitalsOfPatientSuccessfullyRegistered')
+data.setCell(2, 2, 'executePageClasses.CaptureVitalsTestClass')
+data.setCell(2, 3, 27490);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyThePatientIsInActivevisitPagewhileStartVisit')
 data.setCell(3, 2, 'executePageClasses.ActiveVisitTestClass')
-data.setCell(3, 3, 20489);
+data.setCell(3, 3, 26205);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyThePatientIsNotInActivevisitAfterEndVisit')
-data.setCell(4, 2, 'executePageClasses.RegisterAPatientTestClass')
-data.setCell(4, 3, 20097);
+data.setCell(4, 1, 'verifyThePatientIsInActivevisitPagewhileStartVisit')
+data.setCell(4, 2, 'executePageClasses.ActiveVisitTestClass')
+data.setCell(4, 3, 24108);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifyThePatientIsNotInActivevisitAfterEndVisit')
 data.setCell(5, 2, 'executePageClasses.RegisterAPatientTestClass')
-data.setCell(5, 3, 19307);
+data.setCell(5, 3, 22450);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyRegisterAPatientSuccessfully')
-data.setCell(6, 2, 'executePageClasses.RegisterAPatientTestClass')
-data.setCell(6, 3, 15659);
+data.setCell(6, 1, 'verifyThePatientIsInActivevisitPagewhileStartVisit')
+data.setCell(6, 2, 'executePageClasses.ActiveVisitTestClass')
+data.setCell(6, 3, 20703);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyRegisterAPatientSuccessfully')
-data.setCell(7, 2, 'executePageClasses.RegisterAPatientTestClass')
-data.setCell(7, 3, 11615);
+data.setCell(7, 1, 'verifyThePatientIsInActivevisitPagewhileStartVisit')
+data.setCell(7, 2, 'executePageClasses.ActiveVisitTestClass')
+data.setCell(7, 3, 20600);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyToFindAPatient')
-data.setCell(8, 2, 'executePageClasses.FindAPatientTestClass')
-data.setCell(8, 3, 11304);
+data.setCell(8, 1, 'verifyThePatientIsNotInActivevisitAfterEndVisit')
+data.setCell(8, 2, 'executePageClasses.RegisterAPatientTestClass')
+data.setCell(8, 3, 19874);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyToFindAPatient')
-data.setCell(9, 2, 'executePageClasses.FindAPatientTestClass')
-data.setCell(9, 3, 9055);
+data.setCell(9, 1, 'verifyThePatientIsInActivevisitPagewhileStartVisit')
+data.setCell(9, 2, 'executePageClasses.ActiveVisitTestClass')
+data.setCell(9, 3, 18089);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifySuccessfulLogoutFromHomePage')
-data.setCell(10, 2, 'executePageClasses.HomePageTestClass')
-data.setCell(10, 3, 5562);
+data.setCell(10, 1, 'verifyThePatientIsInActivevisitPagewhileStartVisit')
+data.setCell(10, 2, 'executePageClasses.ActiveVisitTestClass')
+data.setCell(10, 3, 17396);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifySuccessfulLogoutFromHomePage')
-data.setCell(11, 2, 'executePageClasses.HomePageTestClass')
-data.setCell(11, 3, 3540);
+data.setCell(11, 1, 'verifyThePatientIsInActivevisitPagewhileStartVisit')
+data.setCell(11, 2, 'executePageClasses.ActiveVisitTestClass')
+data.setCell(11, 3, 16811);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifySuccessfulLogin')
-data.setCell(12, 2, 'executePageClasses.LoginPageTestClass')
-data.setCell(12, 3, 2733);
+data.setCell(12, 1, 'verifyRegisterAPatientSuccessfully')
+data.setCell(12, 2, 'executePageClasses.RegisterAPatientTestClass')
+data.setCell(12, 3, 14224);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'verifyAllTilesAreDisplayedInHomePage')
-data.setCell(13, 2, 'executePageClasses.HomePageTestClass')
-data.setCell(13, 3, 2387);
+data.setCell(13, 1, 'verifyRegisterAPatientSuccessfully')
+data.setCell(13, 2, 'executePageClasses.RegisterAPatientTestClass')
+data.setCell(13, 3, 13803);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verifyAllTilesAreDisplayedInHomePage')
-data.setCell(14, 2, 'executePageClasses.HomePageTestClass')
-data.setCell(14, 3, 2200);
+data.setCell(14, 1, 'verifyToFindAPatient')
+data.setCell(14, 2, 'executePageClasses.FindAPatientTestClass')
+data.setCell(14, 3, 5494);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'verifySuccessfulLogin')
-data.setCell(15, 2, 'executePageClasses.LoginPageTestClass')
-data.setCell(15, 3, 2028);
+data.setCell(15, 1, 'verifyToFindAPatient')
+data.setCell(15, 2, 'executePageClasses.FindAPatientTestClass')
+data.setCell(15, 3, 5054);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'verifyUnSuccessfulLogin')
-data.setCell(16, 2, 'executePageClasses.LoginPageTestClass')
-data.setCell(16, 3, 1490);
+data.setCell(16, 1, 'verifySuccessfulLogoutFromHomePage')
+data.setCell(16, 2, 'executePageClasses.HomePageTestClass')
+data.setCell(16, 3, 3841);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'verifyUnSuccessfulLogin')
-data.setCell(17, 2, 'executePageClasses.LoginPageTestClass')
-data.setCell(17, 3, 1412);
+data.setCell(17, 1, 'verifySuccessfulLogoutFromHomePage')
+data.setCell(17, 2, 'executePageClasses.HomePageTestClass')
+data.setCell(17, 3, 3718);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'verifyUnSuccessfulLogin')
+data.setCell(18, 1, 'verifySuccessfulLogin')
 data.setCell(18, 2, 'executePageClasses.LoginPageTestClass')
-data.setCell(18, 3, 1401);
+data.setCell(18, 3, 3442);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'verifyUnSuccessfulLogin')
-data.setCell(19, 2, 'executePageClasses.LoginPageTestClass')
-data.setCell(19, 3, 1380);
+data.setCell(19, 1, 'verifyAllTilesAreDisplayedInHomePage')
+data.setCell(19, 2, 'executePageClasses.HomePageTestClass')
+data.setCell(19, 3, 2369);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'verifyUnSuccessfulLogin')
-data.setCell(20, 2, 'executePageClasses.LoginPageTestClass')
-data.setCell(20, 3, 1353);
+data.setCell(20, 1, 'verifyAllTilesAreDisplayedInHomePage')
+data.setCell(20, 2, 'executePageClasses.HomePageTestClass')
+data.setCell(20, 3, 2278);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'verifyUnSuccessfulLogin')
+data.setCell(21, 1, 'verifySuccessfulLogin')
 data.setCell(21, 2, 'executePageClasses.LoginPageTestClass')
-data.setCell(21, 3, 1349);
+data.setCell(21, 3, 2058);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'verifyThePageOpenWhileHittingUrl')
+data.setCell(22, 1, 'verifyUnSuccessfulLogin')
 data.setCell(22, 2, 'executePageClasses.LoginPageTestClass')
-data.setCell(22, 3, 14);
+data.setCell(22, 3, 1805);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'verifyThePageOpenWhileHittingUrl')
+data.setCell(23, 1, 'verifyUnSuccessfulLogin')
 data.setCell(23, 2, 'executePageClasses.LoginPageTestClass')
-data.setCell(23, 3, 8);
+data.setCell(23, 3, 1801);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyUnSuccessfulLogin')
+data.setCell(24, 2, 'executePageClasses.LoginPageTestClass')
+data.setCell(24, 3, 1578);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyUnSuccessfulLogin')
+data.setCell(25, 2, 'executePageClasses.LoginPageTestClass')
+data.setCell(25, 3, 1488);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyUnSuccessfulLogin')
+data.setCell(26, 2, 'executePageClasses.LoginPageTestClass')
+data.setCell(26, 3, 1454);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifyUnSuccessfulLogin')
+data.setCell(27, 2, 'executePageClasses.LoginPageTestClass')
+data.setCell(27, 3, 1428);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifyThePageOpenWhileHittingUrl')
+data.setCell(28, 2, 'executePageClasses.LoginPageTestClass')
+data.setCell(28, 3, 14);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifyThePageOpenWhileHittingUrl')
+data.setCell(29, 2, 'executePageClasses.LoginPageTestClass')
+data.setCell(29, 3, 12);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -752,329 +920,405 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">executePageClasses.ActiveVisitTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">createExtendReport(org.testng.TestRunner@79dca6fe)</span>
+                <span class="method-name">createExtendReport(org.testng.TestRunner@253c60af)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">581 ms</span>
+                <span class="method-start">595 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</span>
-                <span class="method-start">7736 ms</span>
+                <span class="method-start">11548 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActivevisitPagewhileStartVisit status=SUCCESS method=ActiveVisi...)</span>
-                <span class="method-start">28719 ms</span>
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActivevisitPagewhileStartVisit status=SKIP method=ActiveVisitTe...)</span>
+                <span class="method-start">32267 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">32488 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</span>
+                <span class="method-start">37584 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActivevisitPagewhileStartVisit status=SKIP method=ActiveVisitTe...)</span>
+                <span class="method-start">63814 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">64058 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</span>
+                <span class="method-start">88556 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActivevisitPagewhileStartVisit status=SKIP method=ActiveVisitTe...)</span>
+                <span class="method-start">109162 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">109330 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</span>
+                <span class="method-start">114645 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActivevisitPagewhileStartVisit status=FAILURE method=ActiveVisi...)</span>
+                <span class="method-start">142420 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">executePageClasses.RegisterAPatientTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">29051 ms</span>
+                <span class="method-start">142868 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyRegisterAPatientSuccessfully(admin, Admin123)</span>
-                <span class="method-start">34221 ms</span>
+                <span class="method-start">147598 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyRegisterAPatientSuccessfully status=SUCCESS method=RegisterAPatientTestClass....)</span>
-                <span class="method-start">49884 ms</span>
+                <span class="method-start">161402 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">50356 ms</span>
+                <span class="method-start">161709 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyThePatientIsNotInActivevisitAfterEndVisit(admin, Admin123)</span>
-                <span class="method-start">55468 ms</span>
+                <span class="method-start">166760 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyThePatientIsNotInActivevisitAfterEndVisit status=SUCCESS method=RegisterAPati...)</span>
-                <span class="method-start">75589 ms</span>
+                <span class="method-start">189210 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">executePageClasses.FindAPatientTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">75973 ms</span>
+                <span class="method-start">189637 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyToFindAPatient(admin, Admin123)</span>
-                <span class="method-start">82733 ms</span>
+                <span class="method-start">195459 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyToFindAPatient status=SUCCESS method=FindAPatientTestClass.verifyToFindAPatie...)</span>
-                <span class="method-start">94037 ms</span>
+                <span class="method-start">200515 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">executePageClasses.LoginPageTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">94275 ms</span>
+                <span class="method-start">200680 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyThePageOpenWhileHittingUrl</span>
-                <span class="method-start">103607 ms</span>
+                <span class="method-start">213049 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyThePageOpenWhileHittingUrl status=SUCCESS method=LoginPageTestClass.verifyThe...)</span>
-                <span class="method-start">103622 ms</span>
+                <span class="method-start">213065 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">103831 ms</span>
+                <span class="method-start">213280 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySuccessfulLogin(admin, Admin123)</span>
-                <span class="method-start">110686 ms</span>
+                <span class="method-start">218474 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifySuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifySuccessfulLogi...)</span>
-                <span class="method-start">113422 ms</span>
+                <span class="method-start">220533 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">113705 ms</span>
+                <span class="method-start">220783 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUnSuccessfulLogin(adm, Admin123)</span>
-                <span class="method-start">118743 ms</span>
+                <span class="method-start">229617 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyUnSuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifyUnSuccessful...)</span>
-                <span class="method-start">120145 ms</span>
+                <span class="method-start">231107 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">120332 ms</span>
+                <span class="method-start">231312 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUnSuccessfulLogin(admin, 123456)</span>
-                <span class="method-start">130394 ms</span>
+                <span class="method-start">237181 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyUnSuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifyUnSuccessful...)</span>
-                <span class="method-start">131892 ms</span>
+                <span class="method-start">238612 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">132290 ms</span>
+                <span class="method-start">238771 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUnSuccessfulLogin(adm, 123456)</span>
-                <span class="method-start">137414 ms</span>
+                <span class="method-start">246822 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyUnSuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifyUnSuccessful...)</span>
-                <span class="method-start">138795 ms</span>
+                <span class="method-start">248401 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">executePageClasses.HomePageTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">138996 ms</span>
+                <span class="method-start">248612 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAllTilesAreDisplayedInHomePage(admin, Admin123)</span>
-                <span class="method-start">144361 ms</span>
+                <span class="method-start">253738 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyAllTilesAreDisplayedInHomePage status=SUCCESS method=HomePageTestClass.verify...)</span>
-                <span class="method-start">146749 ms</span>
+                <span class="method-start">256018 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">146977 ms</span>
+                <span class="method-start">256222 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySuccessfulLogoutFromHomePage(admin, Admin123)</span>
-                <span class="method-start">160408 ms</span>
+                <span class="method-start">266647 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifySuccessfulLogoutFromHomePage status=SUCCESS method=HomePageTestClass.verifySu...)</span>
-                <span class="method-start">165972 ms</span>
+                <span class="method-start">270366 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">executePageClasses.CaptureVitalsTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">166181 ms</span>
+                <span class="method-start">270512 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCaptureVitalsOfPatientSuccessfullyRegistered(admin, Admin123)</span>
-                <span class="method-start">171372 ms</span>
+                <span class="method-start">279028 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyCaptureVitalsOfPatientSuccessfullyRegistered status=SUCCESS method=CaptureVit...)</span>
-                <span class="method-start">195750 ms</span>
+                <span class="method-start">306526 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">executePageClasses.ActiveVisitTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(edge)</span>
-                <span class="method-start">197478 ms</span>
+                <span class="method-start">307984 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</span>
-                <span class="method-start">204895 ms</span>
+                <span class="method-start">315330 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActivevisitPagewhileStartVisit status=SUCCESS method=ActiveVisi...)</span>
-                <span class="method-start">225399 ms</span>
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActivevisitPagewhileStartVisit status=SKIP method=ActiveVisitTe...)</span>
+                <span class="method-start">332726 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(edge)</span>
+                <span class="method-start">333021 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</span>
+                <span class="method-start">338199 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActivevisitPagewhileStartVisit status=SKIP method=ActiveVisitTe...)</span>
+                <span class="method-start">355018 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(edge)</span>
+                <span class="method-start">355254 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</span>
+                <span class="method-start">360238 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActivevisitPagewhileStartVisit status=SKIP method=ActiveVisitTe...)</span>
+                <span class="method-start">378327 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(edge)</span>
+                <span class="method-start">378636 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThePatientIsInActivevisitPagewhileStartVisit(admin, Admin123)</span>
+                <span class="method-start">385040 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThePatientIsInActivevisitPagewhileStartVisit status=FAILURE method=ActiveVisi...)</span>
+                <span class="method-start">409151 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">executePageClasses.RegisterAPatientTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(edge)</span>
-                <span class="method-start">225855 ms</span>
+                <span class="method-start">409647 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyRegisterAPatientSuccessfully(admin, Admin123)</span>
-                <span class="method-start">233207 ms</span>
+                <span class="method-start">415168 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyRegisterAPatientSuccessfully status=SUCCESS method=RegisterAPatientTestClass....)</span>
-                <span class="method-start">244822 ms</span>
+                <span class="method-start">429392 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(edge)</span>
-                <span class="method-start">245216 ms</span>
+                <span class="method-start">429739 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyThePatientIsNotInActivevisitAfterEndVisit(admin, Admin123)</span>
-                <span class="method-start">253209 ms</span>
+                <span class="method-start">435039 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyThePatientIsNotInActivevisitAfterEndVisit status=SUCCESS method=RegisterAPati...)</span>
-                <span class="method-start">272524 ms</span>
+                <span class="method-start">454922 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">executePageClasses.FindAPatientTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(edge)</span>
-                <span class="method-start">272899 ms</span>
+                <span class="method-start">455290 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyToFindAPatient(admin, Admin123)</span>
-                <span class="method-start">287629 ms</span>
+                <span class="method-start">460632 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyToFindAPatient status=SUCCESS method=FindAPatientTestClass.verifyToFindAPatie...)</span>
-                <span class="method-start">296686 ms</span>
+                <span class="method-start">466127 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">executePageClasses.LoginPageTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(edge)</span>
-                <span class="method-start">296983 ms</span>
+                <span class="method-start">466334 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyThePageOpenWhileHittingUrl</span>
-                <span class="method-start">304199 ms</span>
+                <span class="method-start">471930 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyThePageOpenWhileHittingUrl status=SUCCESS method=LoginPageTestClass.verifyThe...)</span>
-                <span class="method-start">304207 ms</span>
+                <span class="method-start">471944 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(edge)</span>
-                <span class="method-start">304448 ms</span>
+                <span class="method-start">472224 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySuccessfulLogin(admin, Admin123)</span>
-                <span class="method-start">311351 ms</span>
+                <span class="method-start">479649 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifySuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifySuccessfulLogi...)</span>
-                <span class="method-start">313380 ms</span>
+                <span class="method-start">483092 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(edge)</span>
-                <span class="method-start">313654 ms</span>
+                <span class="method-start">483385 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUnSuccessfulLogin(adm, Admin123)</span>
-                <span class="method-start">325773 ms</span>
+                <span class="method-start">491692 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyUnSuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifyUnSuccessful...)</span>
-                <span class="method-start">327127 ms</span>
+                <span class="method-start">493493 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(edge)</span>
-                <span class="method-start">327382 ms</span>
+                <span class="method-start">493737 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUnSuccessfulLogin(admin, 123456)</span>
-                <span class="method-start">339606 ms</span>
+                <span class="method-start">499489 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyUnSuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifyUnSuccessful...)</span>
-                <span class="method-start">341019 ms</span>
+                <span class="method-start">501295 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(edge)</span>
-                <span class="method-start">341326 ms</span>
+                <span class="method-start">501520 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUnSuccessfulLogin(adm, 123456)</span>
-                <span class="method-start">352632 ms</span>
+                <span class="method-start">507486 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyUnSuccessfulLogin status=SUCCESS method=LoginPageTestClass.verifyUnSuccessful...)</span>
-                <span class="method-start">353983 ms</span>
+                <span class="method-start">508941 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">executePageClasses.HomePageTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(edge)</span>
-                <span class="method-start">354290 ms</span>
+                <span class="method-start">509177 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAllTilesAreDisplayedInHomePage(admin, Admin123)</span>
-                <span class="method-start">360860 ms</span>
+                <span class="method-start">515741 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyAllTilesAreDisplayedInHomePage status=SUCCESS method=HomePageTestClass.verify...)</span>
-                <span class="method-start">363081 ms</span>
+                <span class="method-start">518115 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(edge)</span>
-                <span class="method-start">363385 ms</span>
+                <span class="method-start">518406 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySuccessfulLogoutFromHomePage(admin, Admin123)</span>
-                <span class="method-start">370109 ms</span>
+                <span class="method-start">523259 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifySuccessfulLogoutFromHomePage status=SUCCESS method=HomePageTestClass.verifySu...)</span>
-                <span class="method-start">373650 ms</span>
+                <span class="method-start">527102 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">executePageClasses.CaptureVitalsTestClass</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(edge)</span>
-                <span class="method-start">373935 ms</span>
+                <span class="method-start">527407 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCaptureVitalsOfPatientSuccessfullyRegistered(admin, Admin123)</span>
-                <span class="method-start">384822 ms</span>
+                <span class="method-start">534719 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyCaptureVitalsOfPatientSuccessfullyRegistered status=SUCCESS method=CaptureVit...)</span>
-                <span class="method-start">418490 ms</span>
+                <span class="method-start">566411 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

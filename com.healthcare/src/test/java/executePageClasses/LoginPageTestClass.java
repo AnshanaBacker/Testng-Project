@@ -8,11 +8,13 @@ import org.testng.annotations.Test;
 import pageClasses.HomePageClass;
 import pageClasses.LoginPageClass;
 import retryAnalyzer.RetryAnalyzer;
+import utilities.GeneralUtilities;
 
 public class LoginPageTestClass extends BaseClass {
 	
 	LoginPageClass lp;
 	HomePageClass hp;
+	GeneralUtilities gl;
 	
   
 	
@@ -33,8 +35,9 @@ public class LoginPageTestClass extends BaseClass {
 	   lp=new LoginPageClass(driver);
 	   lp.login(uname1,passwd1);
 	   
+	   gl=new GeneralUtilities();
 	   hp=new HomePageClass(driver);
-	   String expectedMessage=hp.readStringData(2,1);
+	   String expectedMessage=gl.readStringData(2,1);
 	   String actualMessage=hp.getTextOfAdminMessage();
 	   Assert.assertEquals(actualMessage,expectedMessage);
 	     
@@ -46,7 +49,8 @@ public class LoginPageTestClass extends BaseClass {
 	  
 	   lp=new LoginPageClass(driver);
 	   lp.login(uname, passwd);
-	   String expectedMessage=lp.readStringData(2,2);
+	   gl=new GeneralUtilities();
+	   String expectedMessage=gl.readStringData(2,2);
 	   String actualMessage=lp.getTextOfErrorMessage();
 	   Assert.assertEquals(actualMessage,expectedMessage);
 	   

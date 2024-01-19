@@ -9,12 +9,14 @@ import pageClasses.FindAPatientClass;
 import pageClasses.HomePageClass;
 import pageClasses.LoginPageClass;
 import retryAnalyzer.RetryAnalyzer;
+import utilities.GeneralUtilities;
 
 public class FindAPatientTestClass extends BaseClass {
 	
 	LoginPageClass lp;
 	HomePageClass hp;
 	FindAPatientClass fp;
+	GeneralUtilities gl;
 	
   @Test(dataProvider = "SuccessfulLogin",dataProviderClass = DataProviderClass.class,retryAnalyzer = RetryAnalyzer.class)
   public void verifyToFindAPatient(String uname1,String passwd1) throws IOException {
@@ -25,8 +27,10 @@ public class FindAPatientTestClass extends BaseClass {
 	  hp=new HomePageClass(driver);
 	  hp.clickOnFindpatient();
 	  
+	  gl=new GeneralUtilities();
+	  
 	  fp=new FindAPatientClass(driver);
-	  Boolean check=fp.isPatientNameDisplayed(fp.readStringData(0, 5));
+	  Boolean check=fp.isPatientNameDisplayed(gl.readStringData(0, 5));
 	  Assert.assertTrue(check);
 	  
   }

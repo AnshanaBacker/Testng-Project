@@ -10,6 +10,7 @@ import pageClasses.HomePageClass;
 import pageClasses.LoginPageClass;
 import pageClasses.RegisterAPatientClass;
 import retryAnalyzer.RetryAnalyzer;
+import utilities.GeneralUtilities;
 
 public class ActiveVisitTestClass extends BaseClass {
 
@@ -17,6 +18,7 @@ public class ActiveVisitTestClass extends BaseClass {
 	HomePageClass hp;
 	RegisterAPatientClass rp;
 	ActiveVisitPageClass ap;
+	GeneralUtilities gl;
 
 	@Test(dataProvider = "SuccessfulLogin", dataProviderClass = DataProviderClass.class,retryAnalyzer = RetryAnalyzer.class)
 	public void verifyThePatientIsInActivevisitPagewhileStartVisit(String uname1, String passwd1) throws IOException, InterruptedException {
@@ -26,19 +28,20 @@ public class ActiveVisitTestClass extends BaseClass {
 
 		hp = new HomePageClass(driver);
 		hp.clickonRegister();
+		gl=new GeneralUtilities();
 
 		rp = new RegisterAPatientClass(driver);
-		rp.enterName(rp.readStringData(5,3));
-		rp.enterFamilyName(rp.readStringData(6,3));
+		rp.enterName(gl.readStringData(5,3));
+		rp.enterFamilyName(gl.readStringData(6,3));
 		rp.clickOnButton();
 		rp.clickOnGender(1);
 		rp.clickOnButton();
 		rp.clickOnButton();
-		rp.enterBirthDay(rp.readIntegerData(7,3));
+		rp.enterBirthDay(gl.readIntegerData(7,3));
 		rp.selectBirthMonth(4);
-		rp.enterBirthYear(rp.readIntegerData(8,3));
+		rp.enterBirthYear(gl.readIntegerData(8,3));
 		rp.clickOnButton();
-		rp.enterAddress(rp.readStringData(9,3));
+		rp.enterAddress(gl.readStringData(9,3));
 		rp.clickOnButton();
 		rp.clickOnButton();
 		rp.clickOnButton();
@@ -49,7 +52,7 @@ public class ActiveVisitTestClass extends BaseClass {
         hp.clickOnActiveVisit();
 
 		ap = new ActiveVisitPageClass(driver);
-		Boolean find = ap.isActivevisitNameDisplayed(ap.readStringData(10,3));
+		Boolean find = ap.isActivevisitNameDisplayed(gl.readStringData(10,3));
 		System.out.println(find);
 		Assert.assertTrue(find);
 

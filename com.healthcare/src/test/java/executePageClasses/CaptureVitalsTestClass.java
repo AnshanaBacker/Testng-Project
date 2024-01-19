@@ -10,6 +10,7 @@ import pageClasses.HomePageClass;
 import pageClasses.LoginPageClass;
 import pageClasses.RegisterAPatientClass;
 import retryAnalyzer.RetryAnalyzer;
+import utilities.GeneralUtilities;
 
 public class CaptureVitalsTestClass extends BaseClass {
 	
@@ -18,6 +19,7 @@ public class CaptureVitalsTestClass extends BaseClass {
 	HomePageClass hp;
 	RegisterAPatientClass rp;
 	CaptureVitalsClass cp;
+	GeneralUtilities gl;
 	
 	
   @Test(dataProvider ="SuccessfulLogin",dataProviderClass = DataProviderClass.class,retryAnalyzer = RetryAnalyzer.class)
@@ -49,19 +51,20 @@ public class CaptureVitalsTestClass extends BaseClass {
 	  rp.clickOnConfirmRight();
 	  rp.clickOnCaptureVitals();
 	  
+	  gl=new GeneralUtilities();
 	  cp=new CaptureVitalsClass(driver);
-	  cp.enterHeight(cp.readIntegerData(11,4));
+	  cp.enterHeight(gl.readIntegerData(11,4));
 	  cp.clickonButton();
-	  cp.enterWeight(cp.readIntegerData(12,4));
-	  cp.clickonButton();
-	  cp.clickonButton();
-	  cp.enterTemperature(cp.readIntegerData(13,4));
-	  cp.clickonButton();
-	  cp.enterPulse(cp.readIntegerData(14,4));
+	  cp.enterWeight(gl.readIntegerData(12,4));
 	  cp.clickonButton();
 	  cp.clickonButton();
-	  cp.enterlowBP(cp.readIntegerData(15,4));
-	  cp.enterHighBp(cp.readIntegerData(16,4));
+	  cp.enterTemperature(gl.readIntegerData(13,4));
+	  cp.clickonButton();
+	  cp.enterPulse(gl.readIntegerData(14,4));
+	  cp.clickonButton();
+	  cp.clickonButton();
+	  cp.enterlowBP(gl.readIntegerData(15,4));
+	  cp.enterHighBp(gl.readIntegerData(16,4));
 	  cp.clickonButton();
 	  cp.clickonButton();
 	  cp.clickonSave();

@@ -9,12 +9,14 @@ import pageClasses.HomePageClass;
 import pageClasses.LoginPageClass;
 import pageClasses.RegisterAPatientClass;
 import retryAnalyzer.RetryAnalyzer;
+import utilities.GeneralUtilities;
 
 public class RegisterAPatientTestClass extends BaseClass {
 	
 	LoginPageClass lp;
 	HomePageClass hp;
 	RegisterAPatientClass rp;
+	GeneralUtilities gl;
 	
   @Test(dataProvider ="SuccessfulLogin",dataProviderClass = DataProviderClass.class,retryAnalyzer = RetryAnalyzer.class)
   public void verifyRegisterAPatientSuccessfully(String uname1,String passwd1) throws IOException {
@@ -59,6 +61,8 @@ public class RegisterAPatientTestClass extends BaseClass {
 
 		hp = new HomePageClass(driver);
         hp.clickonRegister();
+        
+        gl=new GeneralUtilities();
 
 		rp = new RegisterAPatientClass(driver);
 		rp.enterName(rp.getFirstName());
@@ -80,7 +84,7 @@ public class RegisterAPatientTestClass extends BaseClass {
 		rp.clickOnConfirmRight();
 		rp.clickOnEndVisit();
 		rp.clickOnYes();
-		String expectedtext=rp.readStringData(10,2);
+		String expectedtext=gl.readStringData(10,2);
 		String actualtext=rp.textOfNoactivevisit();
 		Assert.assertEquals(actualtext,expectedtext);
 		

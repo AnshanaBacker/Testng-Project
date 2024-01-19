@@ -7,15 +7,6 @@
   <test thread-count="5" name="chromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="executePageClasses.RegisterAPatientTestClass">
-        <methods>
-          <include name="verifyRegisterAPatientSuccessfully"/>
-          <include name="verifyThePatientIsNotInActivevisitAfterEndVisit"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="createExtendReport"/>
-        </methods>
-      </class> <!-- executePageClasses.RegisterAPatientTestClass -->
       <class name="executePageClasses.ActiveVisitTestClass">
         <methods>
           <include name="afterMethod"/>
@@ -24,98 +15,19 @@
           <include name="verifyThePatientIsInActivevisitPagewhileStartVisit" invocation-numbers="0"/>
         </methods>
       </class> <!-- executePageClasses.ActiveVisitTestClass -->
-      <class name="executePageClasses.LoginPageTestClass">
-        <methods>
-          <include name="verifySuccessfulLogin"/>
-          <include name="afterMethod"/>
-          <include name="verifyUnSuccessfulLogin"/>
-          <include name="beforeMethod"/>
-          <include name="createExtendReport"/>
-          <include name="verifyThePageOpenWhileHittingUrl"/>
-        </methods>
-      </class> <!-- executePageClasses.LoginPageTestClass -->
-      <class name="executePageClasses.FindAPatientTestClass">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="verifyToFindAPatient"/>
-          <include name="beforeMethod"/>
-          <include name="createExtendReport"/>
-        </methods>
-      </class> <!-- executePageClasses.FindAPatientTestClass -->
-      <class name="executePageClasses.CaptureVitalsTestClass">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="verifyCaptureVitalsOfPatientSuccessfullyRegistered"/>
-          <include name="createExtendReport"/>
-        </methods>
-      </class> <!-- executePageClasses.CaptureVitalsTestClass -->
-      <class name="executePageClasses.HomePageTestClass">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="verifyAllTilesAreDisplayedInHomePage"/>
-          <include name="createExtendReport"/>
-          <include name="verifySuccessfulLogoutFromHomePage"/>
-        </methods>
-      </class> <!-- executePageClasses.HomePageTestClass -->
     </classes>
   </test> <!-- chromeTest(failed) -->
   <test thread-count="5" name="edgeTest(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="executePageClasses.RegisterAPatientTestClass">
-        <methods>
-          <include name="verifyRegisterAPatientSuccessfully" invocation-numbers="0"/>
-          <include name="verifyThePatientIsNotInActivevisitAfterEndVisit"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="createExtendReport"/>
-        </methods>
-      </class> <!-- executePageClasses.RegisterAPatientTestClass -->
       <class name="executePageClasses.ActiveVisitTestClass">
         <methods>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="createExtendReport"/>
-          <include name="verifyThePatientIsInActivevisitPagewhileStartVisit"/>
+          <include name="verifyThePatientIsInActivevisitPagewhileStartVisit" invocation-numbers="0"/>
         </methods>
       </class> <!-- executePageClasses.ActiveVisitTestClass -->
-      <class name="executePageClasses.LoginPageTestClass">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="verifySuccessfulLogin"/>
-          <include name="verifyUnSuccessfulLogin"/>
-          <include name="beforeMethod"/>
-          <include name="createExtendReport"/>
-          <include name="verifyThePageOpenWhileHittingUrl"/>
-        </methods>
-      </class> <!-- executePageClasses.LoginPageTestClass -->
-      <class name="executePageClasses.FindAPatientTestClass">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="verifyToFindAPatient" invocation-numbers="0"/>
-          <include name="beforeMethod"/>
-          <include name="createExtendReport"/>
-        </methods>
-      </class> <!-- executePageClasses.FindAPatientTestClass -->
-      <class name="executePageClasses.CaptureVitalsTestClass">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="verifyCaptureVitalsOfPatientSuccessfullyRegistered"/>
-          <include name="createExtendReport"/>
-        </methods>
-      </class> <!-- executePageClasses.CaptureVitalsTestClass -->
-      <class name="executePageClasses.HomePageTestClass">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="verifyAllTilesAreDisplayedInHomePage"/>
-          <include name="createExtendReport"/>
-          <include name="verifySuccessfulLogoutFromHomePage"/>
-        </methods>
-      </class> <!-- executePageClasses.HomePageTestClass -->
     </classes>
   </test> <!-- edgeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

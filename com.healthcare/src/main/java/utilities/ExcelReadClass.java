@@ -18,7 +18,7 @@ public class ExcelReadClass {
 		
 		public static String getStringdata(int a,int b) throws IOException
 		{
-			f=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\Excel.xlsx");
+			f=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\TestData.xlsx");
 			w=new XSSFWorkbook(f);
 			s=w.getSheet("sheet1");
 			Row r=s.getRow(a);
@@ -30,7 +30,7 @@ public class ExcelReadClass {
 		
 		{
 
-		f=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\Excel.xlsx");
+		f=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\TestData.xlsx");
 		w=new XSSFWorkbook(f);
 		s=w.getSheet("sheet1");
 		Row r=s.getRow(a);

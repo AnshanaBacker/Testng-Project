@@ -2,6 +2,8 @@ package utilities;
 
 
 
+import java.io.IOException;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -80,6 +82,16 @@ public class GeneralUtilities {
 		select.selectByValue(text);
 	}
 	
+	public String readStringData(int row,int column) throws IOException
+	{
+		return ExcelReadClass.getStringdata(row,column);
+		
+	}
+	
+	public String readIntegerData(int row,int column) throws IOException
+	{
+		return ExcelReadClass.getIntegerdata(row,column);
+	}
 	
 	
 	
