@@ -9,6 +9,7 @@ import pageClasses.FindAPatientClass;
 import pageClasses.HomePageClass;
 import pageClasses.LoginPageClass;
 import retryAnalyzer.RetryAnalyzer;
+import utilities.ExcelReadClass;
 import utilities.GeneralUtilities;
 
 public class FindAPatientTestClass extends BaseClass {
@@ -30,7 +31,7 @@ public class FindAPatientTestClass extends BaseClass {
 	  gl=new GeneralUtilities();
 	  
 	  fp=new FindAPatientClass(driver);
-	  Boolean check=fp.isPatientNameDisplayed(gl.readStringData(0, 5));
+	  Boolean check=fp.isPatientNameDisplayed(ExcelReadClass.getStringdata(0, 5));
 	  Assert.assertTrue(check);
 	  
   }

@@ -10,6 +10,7 @@ import pageClasses.HomePageClass;
 import pageClasses.LoginPageClass;
 import pageClasses.RegisterAPatientClass;
 import retryAnalyzer.RetryAnalyzer;
+import utilities.ExcelReadClass;
 import utilities.GeneralUtilities;
 
 public class CaptureVitalsTestClass extends BaseClass {
@@ -53,18 +54,18 @@ public class CaptureVitalsTestClass extends BaseClass {
 	  
 	  gl=new GeneralUtilities();
 	  cp=new CaptureVitalsClass(driver);
-	  cp.enterHeight(gl.readIntegerData(11,4));
+	  cp.enterHeight(ExcelReadClass.getIntegerdata(11,4));
 	  cp.clickonButton();
-	  cp.enterWeight(gl.readIntegerData(12,4));
-	  cp.clickonButton();
-	  cp.clickonButton();
-	  cp.enterTemperature(gl.readIntegerData(13,4));
-	  cp.clickonButton();
-	  cp.enterPulse(gl.readIntegerData(14,4));
+	  cp.enterWeight(ExcelReadClass.getIntegerdata(12,4));
 	  cp.clickonButton();
 	  cp.clickonButton();
-	  cp.enterlowBP(gl.readIntegerData(15,4));
-	  cp.enterHighBp(gl.readIntegerData(16,4));
+	  cp.enterTemperature(ExcelReadClass.getIntegerdata(13,4));
+	  cp.clickonButton();
+	  cp.enterPulse(ExcelReadClass.getIntegerdata(14,4));
+	  cp.clickonButton();
+	  cp.clickonButton();
+	  cp.enterlowBP(ExcelReadClass.getIntegerdata(15,4));
+	  cp.enterHighBp(ExcelReadClass.getIntegerdata(16,4));
 	  cp.clickonButton();
 	  cp.clickonButton();
 	  cp.clickonSave();

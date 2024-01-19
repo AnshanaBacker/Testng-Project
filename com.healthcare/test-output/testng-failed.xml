@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="extendReport.TestListener"/>
   </listeners>
-  <test thread-count="5" name="chromeTest(failed)">
+  <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="executePageClasses.ActiveVisitTestClass">
@@ -16,18 +16,5 @@
         </methods>
       </class> <!-- executePageClasses.ActiveVisitTestClass -->
     </classes>
-  </test> <!-- chromeTest(failed) -->
-  <test thread-count="5" name="edgeTest(failed)">
-    <parameter name="browser" value="edge"/>
-    <classes>
-      <class name="executePageClasses.ActiveVisitTestClass">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="createExtendReport"/>
-          <include name="verifyThePatientIsInActivevisitPagewhileStartVisit" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- executePageClasses.ActiveVisitTestClass -->
-    </classes>
-  </test> <!-- edgeTest(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

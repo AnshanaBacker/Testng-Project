@@ -9,6 +9,7 @@ import pageClasses.HomePageClass;
 import pageClasses.LoginPageClass;
 import pageClasses.RegisterAPatientClass;
 import retryAnalyzer.RetryAnalyzer;
+import utilities.ExcelReadClass;
 import utilities.GeneralUtilities;
 
 public class RegisterAPatientTestClass extends BaseClass {
@@ -84,7 +85,7 @@ public class RegisterAPatientTestClass extends BaseClass {
 		rp.clickOnConfirmRight();
 		rp.clickOnEndVisit();
 		rp.clickOnYes();
-		String expectedtext=gl.readStringData(10,2);
+		String expectedtext=ExcelReadClass.getStringdata(10,2);
 		String actualtext=rp.textOfNoactivevisit();
 		Assert.assertEquals(actualtext,expectedtext);
 		

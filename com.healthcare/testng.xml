@@ -4,15 +4,17 @@
 	<listeners>
 		<listener class-name="extendReport.TestListener"></listener>
 	</listeners>
-  <test thread-count="5" name="Test">
-	  <parameter name="browser" value="chrome"></parameter>
-    <classes>
-    <!-- <class name="executePageClasses.ActiveVisitTestClass"/>
-      <class name="executePageClasses.RegisterAPatientTestClass"/>
-     <class name="executePageClasses.HomePageTestClass"/>
-      <class name="executePageClasses.CaptureVitalsTestClass"/>
-      <class name="executePageClasses.FindAPatientTestClass"/>-->
-        <class name="executePageClasses.LoginPageTestClass"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+	<test thread-count="5" name="Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			     <!--<class name="executePageClasses.ActiveVisitTestClass"/>
+                   <class name="executePageClasses.RegisterAPatientTestClass"/>
+                   <class name="executePageClasses.HomePageTestClass"/>
+                   <class name="executePageClasses.CaptureVitalsTestClass"/>
+                   <class name="executePageClasses.FindAPatientTestClass"/>-->
+			       <class name="executePageClasses.LoginPageTestClass" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
